@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions" />
+
+        <Button
+            android:id="@+id/btnBeethoven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+			android:paddingLeft="5dp"       
+            android:onClick="playBeethoven"
+            android:text="@string/beethoven" />
+
+        <Button
+            android:id="@+id/btnBach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_toRightOf="@id/btnBeethoven"
+            android:paddingLeft="5dp"
+            android:onClick="playBach"
+            android:text="@string/bach" />
+
+        <Button
+            android:id="@+id/btnMozart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_toRightOf="@id/btnBach"
+            android:paddingLeft="5dp"
+            android:onClick="playMozart"
+            android:text="@string/mozart" />
+
+        <Button
+            android:id="@+id/btnPachelbel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_toRightOf="@id/btnMozart"
+            android:paddingLeft="5dp"
+            android:onClick="playPachelbel"
+            android:text="@string/pachelbel" />
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnBeethoven"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>
