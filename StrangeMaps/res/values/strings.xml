@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Strange Maps</string>
+    <string name="action_settings">Settings</string>
+    <string name="GoMaps">View map</string>
+    <string-array name="places">
+        <item>The Lion</item>
+        <item>Massive Triangle carved into mountains</item>
+        <item>Spiral Symbol in sand</item>
+        <item>The Pyramids of Giza</item>
+    </string-array>
+        <string name="intro">Here\'s some of strange places I\'ve found on Google Maps</string>
+</resources>
